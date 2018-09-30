@@ -9,4 +9,3 @@ sudo apt-get install ansible
 
 # Clone the repo
 git clone git@github.com:royer10r/ubuntu-workstation.git
-
