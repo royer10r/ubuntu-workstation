@@ -1,4 +1,4 @@
-# ws-ubuntu
+# ubuntu-workstation
 Ubuntu 18.04 workstation setup
 
 # Install ansible
