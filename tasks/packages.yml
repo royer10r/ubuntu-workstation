@@ -3,3 +3,11 @@
   with_items:
     - htop
     - sshuttle
+    - git
+    - chromium-browser
+    - terminator
+    - vim
+    - virtualbox
+    - virtualbox-ext-pack
+    - vagrant
+    
