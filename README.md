@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get install ansible
 
 # Clone the repo
-git clone git@github.com:royer10r/ubuntu-workstation.git
+git clone https://github.com/royer10r/ubuntu-workstation.git
 
 # Run ansible-pull to finish setup
 sudo ansible-pull -U https://github.com/royer10r/ubuntu-workstation.git
