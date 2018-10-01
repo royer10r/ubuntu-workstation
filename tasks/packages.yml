@@ -10,4 +10,5 @@
     - virtualbox
     - virtualbox-ext-pack
     - vagrant
+    - docker-ce
     
