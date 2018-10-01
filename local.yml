@@ -8,7 +8,6 @@
   tasks:
     - include: tasks/addrepos.yml
     - include: tasks/packages.yml
-    #- include: tasks/groups.yml
     #- include: tasks/users.yml
     #- include: tasks/cron.yml
     
