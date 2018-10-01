@@ -6,11 +6,24 @@
   register: add_repository_key
   ignore_errors: true
 
+- name: Add Chrome apt key
+  apt_key:
+    url: https://dl.google.com/linux/linux_signing_key.pub
+    state: present
+  register: add_repository_key
+  ignore_errors: true
+
 - name: Add Docker Repo
   apt_repository:
     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
     state: present
     filename: docker
+
+- name: Add Chrome Repo
+  apt_repository:
+    repo: deb http://dl.google.com/linux/chrome/deb/ stable main
+    state: present
+    filename: google-chrome
 
 - name: update repositories
   apt: update_cache=yes
