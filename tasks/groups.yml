@@ -1,5 +1,0 @@
-- name: add sudo group to group docker
-  group:
-    name: sudo
-    groups: docker
-    append: yes
