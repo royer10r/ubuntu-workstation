@@ -1,0 +1,21 @@
+
+- name: Add Google Chrome Repo
+  apt_repository:
+    repo: deb http://dl.google.com/linux/chrome/deb/ stable main
+    state: present
+    filename: google-chrome
+
+- name: Add Docker Repo
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+    state: present
+    filename: docker
+
+- name: Add an Apt signing key, uses whichever key is at the URL
+  apt_key:
+    url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
+    state: present
+
+- name: update repositories
+  apt: update_cache=yes
+  changed_when: False
