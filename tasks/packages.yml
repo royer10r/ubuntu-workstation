@@ -11,4 +11,5 @@
     - virtualbox-ext-pack
     - vagrant
     - docker-ce
+    - gnome-tweaks
     
