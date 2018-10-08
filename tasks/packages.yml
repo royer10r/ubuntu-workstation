@@ -12,4 +12,5 @@
     - vagrant
     - docker-ce
     - gnome-tweaks
+    - python3-pip
     
